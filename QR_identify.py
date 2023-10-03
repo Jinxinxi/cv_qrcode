@@ -18,21 +18,22 @@ except:
 # 打开摄像头
 cap = cv.VideoCapture(cameIdx)
 while True:
-    # 读入一帧图像
+    # 读入
     res, img = cap.read()
     if img is None:
         break
 
-    # 进行二维码检测识别
+    # 识别
     res, points = detector.detectAndDecode(img)
 
-    # 在图像上绘制二维码位置，并在终端输出二维码的内容
+    # 绘制位置并输出
     for idx in range(len(points)):
         box = points[idx].astype(np.int32)
         cv.drawContours(img, [box], -1, (0, 255, 0), 3)
         print(f"二维码{idx}: {res[idx]}")
 
     cv.imshow("Check QRcode", img)
+    # 关闭
     if cv.waitKey(30) >= 0:
         break
 
