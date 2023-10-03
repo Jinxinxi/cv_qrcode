@@ -1,28 +1,30 @@
 # cv_qrcode
 
-# 您需要准备的：  
+# What you need to prepare：  
   
-1、安装cv2库（pip方法安装即可）  
-2、安装numpy库（方法同1）  
-————————————下一个版本预计可以自动化安装————————————  
-3、摄像头（要能用的那种） 
+1、Install the CV2 module (just install using the pip method)   
+2、Install the numpy module (same method as 1)  
+3、Camera (the type that can be used)  
+  
+# Usage：  
 
-# 使用方法：  
-
-—————————————在文件夹内使用命令即可运行—————————————  
+Use command  
 cmd：python QR_indentify.py
   
+<strong>Version : <i>1.0.6</i></strong>  
+
+# Error analysis：  
+1、<i><strong>numpy wrong :</strong></i> The numpy version you are using may be lower. You can update numpy and restart the application（Update Method : pip install update 'module name'）.  
   
-Version : 1.0.6  
+2、<i><strong>'moudule name' wrong :</strong></i> You may enter the module name incorrectly or install the module incorrectly when calling the module. You can solve the problem by uninstalling the module or checking the module name（Uninstall Mehtod : pip uninstall 'module name'）.  
+  
+3、<i><strong>syntax wrong :</strong></i> You may encounter syntax errors. There may be incorrect code indentation or nesting errors in the python file. You can modify it according to the actual code.  
 
-# 报错分析：  
-1、numpy wrong : 您使用的numpy版本可能较低，可以更新numpy后重启应用尝试（更新:pip install update 'module name'）。  
-2、'moudule name' wrong : 您可能在调用模块时模块名输入错误或未正确安装该模块，您可以通过卸载模块或检查模块名来解决该问题（卸载:pip uninstall 'module name'）。  
-3、syntax wrong : 您可能遇到了语法错误，python文件中可能出现了代码缩进不正确或嵌套错误，您可以根据实际代码进行修改。  
+# Contact
+If you encounter problems or want to give me suggestions during the use process, I welcome you to contact me.  
+You can contact me through the following ways:  
+  
+<strong><i>QQ-mail :</i> 2358155969@qq.com</strong>    
+  
+<strong>Thanks for your letter !</strong>   
 
-# 联系
-如果您在使用过程中遇到问题或者想给我提供建议，我非常欢迎您联系我。  
-您可以通过一下方式联系我：  
-QQ : 2358155969  
-邮箱 : QQ邮箱  
-您还可以在我的个人网站上联系我，我会积极联系到您，网址在这里 : http://101.132.242.51/index.php/contact/
